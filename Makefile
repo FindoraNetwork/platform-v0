@@ -63,7 +63,7 @@ build: tendermint_cleveldb
 	$(call pack,debug)
 
 # Build for cleveldb
-build_release: tendermint_cleveldb
+build_release: tendermint_goleveldb
 	cargo build --release --bins -p abciapp -p finutils
 	$(call pack,release)
 
